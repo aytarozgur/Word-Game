@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="textFieldA" layoutX="64.0" layoutY="29.0" prefHeight="25.0" prefWidth="516.0" style="-fx-background-color: B0C07D;" text="Özgür Hasan Aytar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="22.0" layoutY="29.0" prefHeight="35.0" prefWidth="33.0" text="A" />
+      <TextField fx:id="textFieldB" editable="false" layoutX="64.0" layoutY="65.0" prefHeight="25.0" prefWidth="516.0" style="-fx-background-color: D9E6F0;" text=" " />
+      <TextField editable="false" layoutX="22.0" layoutY="65.0" prefHeight="35.0" prefWidth="33.0" text="B" />
+      <Pane layoutX="42.0" layoutY="128.0" prefHeight="249.0" prefWidth="516.0">
+         <children>
+            <Button fx:id="characterReverseButton" layoutX="24.0" layoutY="10.0" mnemonicParsing="false" onAction="#characterReverseButton" prefHeight="25.0" prefWidth="100.0" text="character reverse">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="upperCaseButton" layoutX="24.0" layoutY="60.0" mnemonicParsing="false" onAction="#upperCaseButton" prefHeight="25.0" prefWidth="100.0" text="uppercase">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="lowerCaseButton" layoutX="24.0" layoutY="110.0" mnemonicParsing="false" onAction="#lowerCaseButton" prefHeight="25.0" prefWidth="100.0" text="lowercase">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="spotButton" layoutX="24.0" layoutY="160.0" mnemonicParsing="false" onAction="#spotButton" prefHeight="25.0" prefWidth="100.0" text="spot">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="repeatButton" layoutX="24.0" layoutY="210.0" mnemonicParsing="false" onAction="#repeatButton" prefHeight="25.0" prefWidth="100.0" text="repeat">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="devowelizeButton" layoutX="144.0" layoutY="10.0" mnemonicParsing="false" onAction="#devowelizeButton" prefHeight="25.0" prefWidth="100.0" text="devowelize">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="replacerandomlyButton" layoutX="384.0" layoutY="10.0" mnemonicParsing="false" onAction="#replacerandomlyButton" prefWidth="100.0" text="replacerandomly">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="encolourAButton" layoutX="264.0" layoutY="10.0" mnemonicParsing="false" onAction="#encolourAButton" prefHeight="25.0" prefWidth="100.0" text="encolour A">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="asciifyButton" layoutX="144.0" layoutY="60.0" mnemonicParsing="false" onAction="#asciifyButton" prefHeight="25.0" prefWidth="100.0" text="asciify">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="tokenReverseButton" layoutX="144.0" layoutY="110.0" mnemonicParsing="false" onAction="#tokenReverseButton" prefHeight="25.0" prefWidth="100.0" text="token reverse">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="sortAtoZButton" layoutX="144.0" layoutY="160.0" mnemonicParsing="false" onAction="#sortAtoZButton" prefHeight="25.0" prefWidth="100.0" text="sort A-Z">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="sortZtoAButton" layoutX="144.0" layoutY="210.0" mnemonicParsing="false" onAction="#sortZtoAButton" prefHeight="25.0" prefWidth="100.0" text="sort Z-A">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="encolourBButton" layoutX="264.0" layoutY="60.0" mnemonicParsing="false" onAction="#encolourBButton" prefHeight="25.0" prefWidth="100.0" text="encolour B">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="invisibleButton" layoutX="264.0" layoutY="110.0" mnemonicParsing="false" onAction="#invisibleButton" prefHeight="25.0" prefWidth="100.0" text="invisible">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="visibleButton" layoutX="264.0" layoutY="160.0" mnemonicParsing="false" onAction="#visibleButton" prefHeight="25.0" prefWidth="100.0" text="visible">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="shrinkButton" layoutX="264.0" layoutY="210.0" mnemonicParsing="false" onAction="#shrinkButton" prefHeight="25.0" prefWidth="100.0" text="shrink">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="defaultplacesButton" layoutX="384.0" layoutY="60.0" mnemonicParsing="false" onAction="#defaultplacesButton" prefHeight="25.0" prefWidth="100.0" text="default places">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="fullScreenButton" layoutX="384.0" layoutY="110.0" mnemonicParsing="false" onAction="#fullScreenButton" prefHeight="25.0" prefWidth="100.0" text="full screen">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="minimizeButton" layoutX="384.0" layoutY="160.0" mnemonicParsing="false" onAction="#minimizeButton" prefHeight="25.0" prefWidth="100.0" text="minimize">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="quitButton" layoutX="384.0" layoutY="210.0" mnemonicParsing="false" onAction="#quitButton" prefHeight="25.0" prefWidth="100.0" text="quit">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>
